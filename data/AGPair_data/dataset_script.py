@@ -22,8 +22,8 @@ def convert_to_unicode(text):
         raise ValueError("Not running on Python2 or Python 3?")
 
 
-class AG2PairsDataset(datasets.GeneratorBasedBuilder):
-    """A dataset script for loading AGNews(2pairs). Version 1.0.0"""
+class AGPairDataset(datasets.GeneratorBasedBuilder):
+    """A dataset script for loading AGNews(pair). Version 1.0.0"""
     VERSION = datasets.Version("1.0.0")
 
     _URL = "./"

@@ -6,7 +6,7 @@ data_dir="${main_dir}/data"
 
 cd ${main_dir}
 
-# mnli, ag, ag2pairs, qnli, sst-2, ...
+# mnli, ag, ag-pair, qnli, sst-2, ...
 task_names="qnli:sst-2"
 data_dirs="${data_dir}/QNLI_data:${data_dir}/SST-2_data"
 

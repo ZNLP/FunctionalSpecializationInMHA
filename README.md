@@ -34,6 +34,13 @@ cd script
 vim important_attention_train.sh
 bash important_attention_train.sh
 ```
+## AG-Pair Dataset
+The AG-Pair dataset is built from the original dataset AG's News that contains 120k training samples from four topics.
+Given a pair of news as input, the model has to predict whether they are belonging to the same topic (Same) or not (Different).
+
+To generate this dataset, samples in AG are iterated in random order and have an equal chance to combine a sample in the same topic or the other three topics.
+Thus the numbers of training samples in two classes are both 60k.
+Moreover, each news in AG's News occurs exactly twice in the AG-Pair dataset to keep the same word frequency.
 
 ## Contact
 lichong2021@ia.ac.cn

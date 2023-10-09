@@ -126,7 +126,7 @@ num_labels_task = {
     "sts-b": 1,
     "wnli": 2,
     "rte": 2,
-    "ag2pairs": 2,
+    "ag-pair": 2,
     "scitail": 2,
     "snli": 3,
 }
@@ -164,7 +164,7 @@ dataset_labels = {
     "sts-b": 30,
     "wnli": 31,
     "rte": 32,
-    "ag2pairs": 33,
+    "ag-pair": 33,
     "scitail": 34,
     "snli": 35,
 }
@@ -242,7 +242,7 @@ taskid2taskname = {
     30: "sts-b",
     31: "wnli",
     32: "rte",
-    33: "ag2pairs",
+    33: "ag-pair",
     34: "scitail",
     35: "snli",
 }
