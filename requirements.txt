@@ -1,0 +1,5 @@
+torch==1.8.1
+transformers==4.21.0
+datasets==2.3.2
+accelerate==0.11.0
+scikit-learn==1.1.1
