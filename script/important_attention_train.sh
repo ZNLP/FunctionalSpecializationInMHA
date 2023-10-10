@@ -24,12 +24,15 @@ seed=1
 train_data_num=10000
 # train_data_num=120000:80000
 
+# sample_method=proportional
+sample_method=annealed
+
 # 1-\delta of IAT in paper
 iat_train_start_proportion=0.9
 # \alpha of IAT in paper
 train_specific_head_proportion=0.3
 
-iat_options="--specific_train_start_proportion ${iat_train_start_proportion} --train_specific_head_proportion ${train_specific_head_proportion} --train_shared_important_head --train_other_parameters"
+iat_options="--specific_train_start_proportion ${iat_train_start_proportion} --train_specific_head_proportion ${train_specific_head_proportion} --train_shared_important_head --train_other_parameters --training_sample_method ${sample_method}"
 
 max_train_steps=1000
 checkpointing_steps=200
