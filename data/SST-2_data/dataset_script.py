@@ -29,7 +29,7 @@ class SST2_Dataset(datasets.GeneratorBasedBuilder):
     _URL = "./"
     _URLS = {
         "train": _URL + "train.tsv",
-        "train_aug": _URL + "train_aug.tsv",
+        # "train_aug": _URL + "train_aug.tsv",
         "validation": _URL + "dev.tsv",
         "test": _URL + "test.tsv"
     }
@@ -60,7 +60,7 @@ class SST2_Dataset(datasets.GeneratorBasedBuilder):
 
         return [
             datasets.SplitGenerator(name="train", gen_kwargs={"filepath": downloaded_files["train"], "split": "train"}),
-            datasets.SplitGenerator(name="train_aug", gen_kwargs={"filepath": downloaded_files["train_aug"], "split": "train_aug"}),
+            # datasets.SplitGenerator(name="train_aug", gen_kwargs={"filepath": downloaded_files["train_aug"], "split": "train_aug"}),
             datasets.SplitGenerator(name="validation", gen_kwargs={"filepath": downloaded_files["validation"], "split": "validation"}),
             datasets.SplitGenerator(name="test", gen_kwargs={"filepath": downloaded_files["test"], "split": "test"}),
         ]

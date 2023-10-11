@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 gpu=0
 
+# TODO: Setup your runtime path
 main_dir="/home/cli/FunctionalSpecializationInMHA"
 data_dir="${main_dir}/data"
 
 cd ${main_dir}
 
+# TODO: Setup the multitask to learn
 # mnli, ag, ag-pair, qnli, sst-2, ...
 task_names="qnli:sst-2"
 data_dirs="${data_dir}/QNLI_data:${data_dir}/SST-2_data"
 
+# TODO: Specify the base model to train
 # model_path="${data_dir}/bert-base-uncased"
 # model_path="${data_dir}/bert-large-uncased"
 model_path="${data_dir}/roberta-base"
